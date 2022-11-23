@@ -132,7 +132,7 @@ class VideoSlice_APP(QMainWindow):
         geo = label_name.geometry()
         w,h = geo.getRect()[2:]
         frame = cv2.resize(img1,(w,h))
-        
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         image = QImage(frame,frame.shape[1],frame.shape[0],frame.strides[0],QImage.Format_RGB888)
         label_name.setPixmap(QPixmap.fromImage(image))
 
