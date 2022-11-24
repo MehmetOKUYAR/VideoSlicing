@@ -9,7 +9,7 @@ if the required libraries are not available,download `pip3 install -r requiremen
 and run like
 `python3 main.py`
 
-**and also you can dowload [app.exe](https://drive.google.com/file/d/1rDg5TxijRONEP7po9_pya2dbhiEoJQ3f/view?usp=sharing) for windows**
+**and also you can dowload [app.exe](https://drive.google.com/file/d/19Mi71fYOX6IskMkPjYdL2uIyU6iAQKI_/view?usp=sharing) for windows**
 
 ![Image of Yaktocat](https://github.com/MehmetOKUYAR/VideoSlicing/blob/master/Screenshot%20from%202022-11-24%2013-06-14.png)
 
