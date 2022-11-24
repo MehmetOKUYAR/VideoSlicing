@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1326</width>
+    <width>1328</width>
     <height>889</height>
    </rect>
   </property>
@@ -216,19 +216,6 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="2">
-         <widget class="QLabel" name="label_7">
-          <property name="font">
-           <font>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="6">
          <widget class="QPushButton" name="pushButton_2">
           <property name="maximumSize">
@@ -249,26 +236,6 @@
           </property>
           <property name="text">
            <string>Bölme işlemini Başlat</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="3">
-         <widget class="QLabel" name="label_8">
-          <property name="maximumSize">
-           <size>
-            <width>180</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>Kaç Frame de bir Bölünsün :</string>
           </property>
          </widget>
         </item>
@@ -297,6 +264,22 @@
           </property>
          </widget>
         </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_7">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(78, 154, 6);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="1">
          <widget class="QPushButton" name="pushButton_3">
           <property name="font">
@@ -314,6 +297,43 @@
           </property>
          </widget>
         </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_8">
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Kaç Frame de bir Bölünsün :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(239, 41, 41);</string>
+          </property>
+          <property name="text">
+           <string>Bölme işlemini Durdur</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
      </layout>
@@ -325,7 +345,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1326</width>
+     <width>1328</width>
      <height>22</height>
     </rect>
    </property>
