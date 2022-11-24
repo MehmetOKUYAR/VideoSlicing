@@ -14,9 +14,14 @@ class VideoSlice_APP(QMainWindow):
         self.ui.pushButton.clicked.connect(self.load_video)
         self.ui.pushButton_2.clicked.connect(self.slice_video)
         self.ui.pushButton_3.clicked.connect(self.select_save_path)
+        self.ui.pushButton_4.clicked.connect(self.close)
+
+    
+    def close(self):
+        self.stopCap = False
 
     def slice_video(self):
-        
+        self.stopCap = True
         savedFrames = []
         cv2.namedWindow('Video Slice',cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Video Slice', 10,10)
@@ -34,7 +39,9 @@ class VideoSlice_APP(QMainWindow):
 
         while self.video_cap.isOpened():
             ret, frame = self.video_cap.read()
-            if ret==False:
+            if ret==False or self.stopCap == False:
+                self.video_cap.release()
+                cv2.destroyAllWindows()
                 self.ui.label.clear()
                 self.ui.label_7.clear()
                 self.ui.label_2.clear()
@@ -100,8 +107,6 @@ class VideoSlice_APP(QMainWindow):
                     for i,img in enumerate(savedFrames):
                         if i == 0:
                             self.setVideo_camera(img,self.ui.label_2)
-
-
 
             count += 1
             self.setVideo_camera(frame,self.ui.label)
